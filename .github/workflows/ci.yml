@@ -35,7 +35,7 @@ jobs:
 
       - name: Scan yaml files with kube-linter
         continue-on-error: true 
-        uses: stackrox/kube-linter-action@15786eefcc8f5441d767d923b108abe5f7dd8882 # v1.0.6
+        uses: stackrox/kube-linter-action@v1.0.7
         id: kube-linter-action-scan
         with:
           directory: rendered-templates
