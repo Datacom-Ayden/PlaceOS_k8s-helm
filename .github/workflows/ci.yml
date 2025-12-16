@@ -19,7 +19,7 @@ jobs:
           mv charts/placeos/Chart.yaml.tmp charts/placeos/Chart.yaml
       
       - name: Set Up Helm
-        uses: azure/setup-helm@v4.3.0
+        uses: azure/setup-helm@b9e51907a09c216f16ebe8536097933489208112 # v4.3.0
         with:
           version: v3.18.2
 
@@ -35,7 +35,7 @@ jobs:
 
       - name: Scan yaml files with kube-linter
         continue-on-error: true 
-        uses: stackrox/kube-linter-action@v1.0.7
+        uses: stackrox/kube-linter-action@87802a2f4e01abebb3ee3c67a3002fea71f6eae5 # v1.0.7
         id: kube-linter-action-scan
         with:
           directory: rendered-templates
